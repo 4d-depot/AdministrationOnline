@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="12">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<server>
+			<network>
+				<options publication_name="AdministrationOnline" use_legacy_network_layer="false"/>
+				<client_server use_encryption="false"/>
+			</network>
+		</server>
+		<database>
+			<misc standard_xpath="false" use_ast_interpreter="true"/>
+		</database>
+		<compiler>
+			<options compilation_path="3" fat_binary="true"/>
+		</compiler>
+		<web>
+			<standalone_server>
+				<configuration allow_ssl="false" automatic_session_management="true" port_number="8888" publish_at_startup="true" session_mode="3">
+					<hosts>
+						<host html_root="./WebFolder/" id="0" name="default"/>
+					</hosts>
+				</configuration>
+				<options>
+					<cache cache_max_size="524288"/>
+					<text_conversion send_extended="true"/>
+					<keep_alive requests_number="100"/>
+				</options>
+			</standalone_server>
+			<remote>
+				<configuration automatic_session_management="true" session_mode="3"/>
+			</remote>
+		</web>
+	</com.4d>
+</preferences>

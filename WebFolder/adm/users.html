@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>44D Administration</title>
+        <link rel="stylesheet" href="/adm/vendor/simple-line-icons/css/simple-line-icons.css">
+        <link rel="stylesheet" href="/adm/vendor/font-awesome/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/adm/css/styles.css">
+        <link rel="stylesheet" href="/adm/vendor/datatables/datatables.min.css">
+        <link rel="stylesheet" href="/adm/vendor/datatables/select.datatables.min.css">
+        <style>
+            table {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+        </style>
+    </head>
+    <body class="sidebar-fixed header-fixed">
+        <div class="page-wrapper">
+            <nav class="navbar page-header">
+                <!--#4DINCLUDE includes/header.html-->
+            </nav>
+
+            <div class="main-container">
+                <div class="sidebar">
+
+                    <!--#4DINCLUDE includes/sidebar.html-->
+                </div>
+
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row ">
+                            <div class="col-12 ">
+                                <div class="card">
+                                    <div class="card-header bg-light">
+                                        <i class="icon icon-people"></i> Users
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-hover small" id="tbUsers" cellspacing="0" width="100%"></table>
+                                            <button class="btn btn-default" disabled="disabled" id="btnDropUsers"><i class="fa fa-minus-circle" aria-hidden="true">&nbsp;</i>Drop user(s)</button>
+                                            <button class="btn btn-default" disabled="disabled" id="btnSendMessage"><i class="fa fa-paper-plane" aria-hidden="true">&nbsp;</i>Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/adm/vendor/jquery/jquery.min.js"></script>
+        <script src="/adm/vendor/popper.js/popper.min.js"></script>
+        <script src="/adm/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/adm/vendor/datatables/datatables.min.js"></script>
+        <script src="/adm/vendor/datatables/datatables.select.min.js"></script>
+        <script src="/adm/vendor/datatables/datatables.buttons.min.js"></script>
+        <script src="/adm/js/carbon.js"></script>
+        <script src="/adm/js/users.js"></script>
+    </body>
+</html>

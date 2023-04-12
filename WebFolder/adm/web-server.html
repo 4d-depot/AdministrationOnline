@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>4D Administration</title>
+        <link rel="stylesheet" href="/adm/vendor/simple-line-icons/css/simple-line-icons.css">
+        <link rel="stylesheet" href="/adm/vendor/font-awesome/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/adm/css/styles.css">
+    </head>
+    <body class="sidebar-fixed header-fixed">
+        <div class="page-wrapper">
+            <nav class="navbar page-header">
+                <!--#4DINCLUDE includes/header.html-->
+            </nav>
+
+            <div class="main-container">
+                <div class="sidebar">
+                    <!--#4DINCLUDE includes/sidebar.html-->
+                </div>
+
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header bg-light">
+                                        <i class="fa fa-globe" aria-hidden="true">&nbsp;</i>HTTP Server
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row"><div class="col-md-4"><b>State</b></div><div class="col-md-8" id="http-status"></div></div>
+                                        <div class="row"><div class="col-md-4"><b>Starting time</b></div><div class="col-md-8" id="http-ini-date"></div></div>
+                                        <div class="row"><div class="col-md-4"><b>Uptime (hours)</b></div><div class="col-md-8" id="http-uptime"></div></div>
+                                        <div class="row"><div class="col-md-4"><b>Total HTTP hits</b></div><div class="col-md-8" id="http-rqt"></div></div>
+                                        <div class="row">&nbsp;</div>
+                                        <div class="row">
+                                            <div class="col-md-4"><b>SOAP requests</b></div>
+                                            <div class="col-md-8"><span id="soap-on"></span>&nbsp;&nbsp;&nbsp;<button class="btn btn-success btn-sm" id="btnSOAPToggleReject"><i class="fa fa-play" aria-hidden="true">&nbsp;</i></button></div>
+                                        </div>
+                                        <button class="btn btn-primary float-right" id="btnRestartWeb"><i class="fa fa-redo" aria-hidden="true">&nbsp;</i>Restart HTTP Server</button>&nbsp;
+                                       
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header bg-light">
+                                        <i class="fa fa-cog" aria-hidden="true">&nbsp;</i>Configuration
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row"><div class="col-md-4"><b>Auto-launched at startup</b></div><div class="col-md-8" id="auto-launch"></div></div>
+                                        <!--<div class="row"><div class="col-md-4"><b>HTTP Server Processes</b></div><div class="col-md-8" id="http-proc"></div></div>-->
+                                        <!--<div class="row"><div class="col-md-4"><b>Cache Memory</b></div><div class="col-md-8" id="cache-mem"></div></div>-->
+                                        <div class="row">&nbsp;</div>
+                                        <div class="row"><div class="col-md-4"><b>Listening to</b></div><div class="col-md-8" id="ip-info"></div></div>
+                                        <div class="row"><div class="col-md-4"><b>HTTP Port</b></div><div class="col-md-8" id="http-port"></div></div>
+                                        <div class="row"><div class="col-md-4"><b>TLS Enabled</b></div><div class="col-md-8" id="tls-on"></div></div>
+                                        <div class="row">&nbsp;</div>
+                                        <div class="row"><div class="col-md-4"><b>HTTPS Port</b></div><div class="col-md-8" id="https-port"></div></div>
+                                        <!--<div class="row"><div class="col-md-4"><b>Log file</b></div><div class="col-md-8" id="log-file"></div></div>-->
+                                        <!--                                        <div class="row"><div class="col-md-4"><b>Log format</b></div><div class="col-md-8" id="log-format"></div></div>
+                                                                                <div class="row"><div class="col-md-4"><b>Next log backup</b></div><div class="col-md-8" id="next-bk"></div></div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/adm/vendor/jquery/jquery.min.js"></script>
+        <script src="/adm/js/palette.js"></script>
+        <script src="/adm/vendor/popper.js/popper.min.js"></script>
+        <script src="/adm/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/adm/vendor/chart.js/chart.min.js"></script>
+        <script src="/adm/js/carbon.js"></script>
+        <script src="/adm/js/admin.js"></script>
+    </body>
+</html>
